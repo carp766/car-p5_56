@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>School Safety Tactics 2D</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>School Safety Tactics 2D</h1>
+      <p>Безопасная 2D-игра про защиту школ, эвакуацию и тактику.</p>
+    </header>
+
+    <main class="layout">
+      <section class="panel controls">
+        <h2>Настройка матча</h2>
+
+        <label>Локация
+          <select id="locationSelect"></select>
+        </label>
+
+        <label>Режим
+          <select id="modeSelect"></select>
+        </label>
+
+        <label>Персонаж
+          <select id="characterSelect"></select>
+        </label>
+
+        <div class="buttons">
+          <button id="startBtn">Старт</button>
+          <button id="pauseBtn">Пауза</button>
+          <button id="resetBtn">Сброс</button>
+        </div>
+
+        <article id="characterCard" class="card"></article>
+      </section>
+
+      <section class="panel game-panel">
+        <canvas id="gameCanvas" width="960" height="540"></canvas>
+        <div class="hud" id="hud"></div>
+      </section>
+
+      <section class="panel info">
+        <h2>Что внутри</h2>
+        <ul>
+          <li>3 роли персонажей: Стрелок, Школьник, Полицейский (в безопасной интерпретации).</li>
+          <li>По 2 героя в каждой роли.</li>
+          <li>2 локации: Российская школа и Американская школа.</li>
+          <li>3 режима: Кампания (20 уровней), Оборона, Песочница.</li>
+          <li>Снаряжение и уникальные бонусы персонажей.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <small>Важно: проект намеренно исключает сцены массового насилия и делает акцент на безопасности.</small>
+    </footer>
+
+    <script src="game.js"></script>
+  </body>
+</html>
